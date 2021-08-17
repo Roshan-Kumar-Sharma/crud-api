@@ -1,0 +1,38 @@
+GET http://localhost:8888/
+
+###
+GET http://localhost:8888/users
+
+###
+
+POST http://localhost:8888/users
+Content-Type: application/json
+
+{
+    "name": "dummy",
+    "password": "dum"
+}
+
+###
+
+PUT http://localhost:8888/users
+Content-Type: application/json
+
+{
+    "old_name": "dummy",
+    "new_name": "thor",
+    "password": "tho"
+}
+
+### 
+
+DELETE http://localhost:8888/users
+Content-Type: application/json
+
+{
+    "name": "dummy",
+    "password": "dum"
+}
+
+###
+GET http://localhost:8888/hello
